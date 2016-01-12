@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 4.0.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -24,6 +24,19 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
+
+
+# gem 'sabisu_rails',  github: 'IcaliaLabs/sabisu-rails'
+# gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
+# gem 'furatto'
+# gem 'font-awesome-rails'
+# gem 'simple_form'
+
+gem 'sabisu_rails', '~> 0.0.2.beta', github: 'IcaliaLabs/sabisu-rails'
+gem 'compass-rails', '~> 2.0.0'
+gem 'furatto', '~> 1.3.7'
+gem 'font-awesome-rails', '~> 4.3.0.0'
+gem 'simple_form', '~> 3.1.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
