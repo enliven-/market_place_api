@@ -231,6 +231,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2)
+  rspec-expectations
   rspec-rails
   sabisu_rails (~> 0.0.2.beta)!
   sass-rails (~> 4.0.2)

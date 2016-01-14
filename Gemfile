@@ -68,5 +68,6 @@ end
 
 group :test do
   gem 'rspec-rails'
+  gem 'rspec-expectations'
   gem 'shoulda-matchers'
 end
