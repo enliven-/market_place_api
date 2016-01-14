@@ -11,8 +11,8 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       get :show, id: @user.id
     end
 
-    it 'returns the information about a reporter on a hash' do
-      user_response = json_response # helper from spec/support/request_helper
+    it 'returns the user as a hash' do
+      user_response = json_response[:user] # helper from spec/support/request_helper
       expect(user_response[:email]).to eql @user.email
     end
 
@@ -33,7 +33,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'renders the json representation for the user record just created' do
-        user_response = json_response # helper from spec/support/request_helper
+        user_response = json_response[:user] # helper from spec/support/request_helper
         expect(user_response[:email]).to eql @user_attributes[:email]
       end
 
@@ -78,7 +78,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'renders the json representation for the updated user' do
-        user_response = json_response # helper from spec/support/request_helper
+        user_response = json_response[:user] # helper from spec/support/request_helper
         expect(user_response[:email]).to eql 'newmail@example.com'
       end
 
