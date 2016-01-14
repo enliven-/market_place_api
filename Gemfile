@@ -38,7 +38,7 @@ gem 'furatto', '~> 1.3.7'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 gem 'simple_form', '~> 3.1.0'
 
-gem 'active_model_serializers'
+gem 'active_model_serializers', git: 'git@github.com:rails-api/active_model_serializers.git', branch: '0-8-stable'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
