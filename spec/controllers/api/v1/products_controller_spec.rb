@@ -10,7 +10,7 @@ describe Api::V1::ProductsController, type: :controller do
     end
 
     it 'returns records from the database as json array' do
-      products_response = json_response
+      products_response = json_response[:products]
       expect(products_response).to be_a Array
     end
 
@@ -25,7 +25,7 @@ describe Api::V1::ProductsController, type: :controller do
     end
 
     it 'returns the information about product as a hash' do
-      product_response = json_response
+      product_response = json_response[:product]
       expect(product_response[:title]).to eql @product.title
     end
 
@@ -44,7 +44,7 @@ describe Api::V1::ProductsController, type: :controller do
       end
 
       it 'renders the json representation for the product record just created' do
-        product_response = json_response
+        product_response = json_response[:product]
         expect(product_response[:title]).to eql @product_attributes[:title]
       end
 
@@ -89,7 +89,7 @@ describe Api::V1::ProductsController, type: :controller do
       end
 
       it 'renders the json representation for the updated product' do
-        product_response = json_response
+        product_response = json_response[:product]
         expect(product_response[:title]).to eql 'An expensive TV'
       end
 
